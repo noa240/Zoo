@@ -1,0 +1,84 @@
+body{
+margin: 0;
+}
+.container{
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "headr headr headr headr" 
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footr footr footr footr";
+}
+.headr{
+    background-color: rgb(173, 173, 232);
+    grid-area: headr;
+}
+#menu{
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    justify-content:space-around;
+    list-style: none;
+    
+}
+li:hover{
+    cursor: pointer;
+}
+
+.sidebar{
+    background-color: rgb(91, 91, 91);
+    grid-area: sidebar;
+
+}
+
+#continent{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footr{
+    background-color: rgb(173, 173, 232);
+    grid-area: footr;
+    height: 150%;
+    
+}
+img{
+    width: 23vw;
+    height: auto;
+}
+
+@media screen and (min-width: 600px){
+
+    .main{
+        background-color: rgb(255, 255, 255);
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 600px){
+
+    .main{
+        background-color: rgb(255, 255, 255);
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.dead{
+    filter:grayscale(68%) ;
+}
+    
